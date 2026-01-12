@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="frontend/src/logo-new.png" alt="SpendSmart Logo" width="120" />
-</div>
-
 # 💰 SpendSmart - Intelligent Expense Tracker
 
 **SpendSmart** is a modern, full-stack expense tracking application built with the MERN stack (MongoDB, Express, React, Node.js). It goes beyond simple logging by integrating **AI-powered insights** to give you real-time feedback on your spending habits, along with professional reporting tools.
