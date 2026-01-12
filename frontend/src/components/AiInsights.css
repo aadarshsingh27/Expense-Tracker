@@ -1,0 +1,114 @@
+.ai-insights-container {
+    background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    margin: 30px 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-insights-container h3 {
+    margin-top: 0;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Background blob for visual interest */
+.ai-insights-container::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    bottom: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.insight-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 24px;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    transition: transform 0.2s;
+    border-left: 6px solid transparent;
+}
+
+.insight-card:hover {
+    transform: translateY(-5px);
+    background: white;
+}
+
+.insight-icon {
+    font-size: 1.8rem;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: var(--bg-subtle);
+    line-height: 1;
+}
+
+.insight-content h4 {
+    margin: 0 0 8px 0;
+    color: var(--secondary);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.insight-content p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Insight Types - Defined by border and icon background */
+.insight-warning {
+    border-left-color: var(--danger);
+}
+
+.insight-warning .insight-icon {
+    background-color: #FEF2F2;
+}
+
+.insight-tip {
+    border-left-color: var(--info);
+}
+
+.insight-tip .insight-icon {
+    background-color: #EFF6FF;
+}
+
+.insight-praise {
+    border-left-color: var(--success);
+}
+
+.insight-praise .insight-icon {
+    background-color: #ECFDF5;
+}
+
+.ai-loading {
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+}

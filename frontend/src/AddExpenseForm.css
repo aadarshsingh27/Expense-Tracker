@@ -1,0 +1,118 @@
+.form-container {
+  background: var(--bg-card);
+  padding: 32px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 32px;
+  border: 1px solid var(--border-color);
+}
+
+/* Removed AI Input Styles */
+
+.form-title {
+  margin-bottom: 24px;
+  color: var(--secondary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: none !important;
+  padding-bottom: 0;
+}
+
+.form-title i {
+  color: var(--primary);
+}
+
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+
+
+/* New Input Group Styles */
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+  font-size: 1.1rem;
+  pointer-events: none;
+  transition: color 0.3s;
+}
+
+.expense-form input,
+.expense-form select {
+  font-size: 1.1rem;
+  padding: 16px 20px 16px 48px;
+  /* Extra left padding for icon */
+  border-radius: 12px;
+  /* Softer radius */
+  border: 1px solid var(--border-color);
+  background: var(--bg-subtle);
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.expense-form input:focus,
+.expense-form select:focus {
+  background: #fff;
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.1);
+  transform: translateY(-2px);
+}
+
+.expense-form input:focus+.input-icon,
+.expense-form select:focus+.input-icon {
+  color: var(--primary);
+}
+
+/* Make inputs full width */
+.expense-form input[type="text"] {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1;
+}
+
+.expense-form button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px;
+  font-size: 1.1rem;
+}
+
+.expense-form button {
+  background-color: var(--success);
+  color: white;
+  height: 100%;
+}
+
+.expense-form button:hover {
+  background-color: #059669;
+  /* Emerald 600 */
+}
+
+@media screen and (max-width: 768px) {
+  .expense-form {
+    grid-template-columns: 1fr;
+  }
+}

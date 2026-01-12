@@ -1,0 +1,34 @@
+.track-expenses-page {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.dashboard-header {
+    margin-bottom: 32px;
+}
+
+.dashboard-header h1 {
+    font-size: 2.22rem;
+    color: var(--secondary);
+    margin: 0 0 8px 0;
+    font-weight: 800;
+}
+
+.dashboard-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 32px;
+    align-items: start;
+}
+
+@media screen and (max-width: 960px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}

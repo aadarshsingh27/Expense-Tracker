@@ -1,5 +1,18 @@
 {
+  "name": "expense-tracker-mern",
+  "version": "1.0.0",
+  "description": "MERN Stack Expense Tracker with AI",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server --prefix backend\" \"npm start --prefix frontend\"",
+    "server": "npm start --prefix backend",
+    "client": "npm start --prefix frontend",
+    "install-all": "npm install && npm install --prefix backend && npm install --prefix frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "react-router-dom": "^6.24.0"
+    "concurrently": "^8.0.0"
   }
 }

@@ -1,0 +1,145 @@
+.expense-list {
+  background: var(--bg-card);
+  padding: 32px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.expense-list h2 {
+  margin-top: 0;
+  color: var(--secondary);
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.expense-items {
+  list-style: none;
+  padding: 0;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s;
+}
+
+.expense-item:hover {
+  background-color: var(--bg-subtle);
+}
+
+.expense-item:last-child {
+  border-bottom: none;
+}
+
+.expense-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.expense-desc {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.expense-cat {
+  font-size: 0.8rem;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-weight: 700;
+  /* text-transform: uppercase; Removed to fix legibility issues */
+  letter-spacing: 0.02em;
+  color: white;
+  background-color: var(--text-light);
+  /* Default fallback */
+  display: inline-block;
+  align-self: flex-start;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Category Colors */
+.cat-food {
+  background-color: #F59E0B;
+}
+
+.cat-transport {
+  background-color: #3B82F6;
+}
+
+.cat-stationary {
+  background-color: #8B5CF6;
+}
+
+.cat-utilities {
+  background-color: #EF4444;
+}
+
+.cat-entertainment {
+  background-color: #EC4899;
+}
+
+.cat-health {
+  background-color: #10B981;
+}
+
+.cat-shopping {
+  background-color: #F97316;
+}
+
+.cat-other {
+  background-color: #64748B;
+}
+
+.expense-date {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-top: 4px;
+}
+
+.expense-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.expense-amount {
+  font-weight: 800;
+  color: var(--secondary);
+  font-size: 1.35rem;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.5px;
+}
+
+.delete-btn {
+  background-color: transparent;
+  color: var(--text-light);
+  /* Subtle default state */
+  padding: 8px;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+}
+
+.delete-btn:hover {
+  background-color: #FEF2F2;
+  /* Red 50 */
+  color: var(--danger);
+  border-color: #FECACA;
+}
+
+.expense-list h3 {
+  margin-top: 30px;
+  text-align: right;
+  font-size: 1.5rem;
+  color: var(--secondary);
+  border-top: 2px dashed var(--border-color);
+  padding-top: 20px;
+}
