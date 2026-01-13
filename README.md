@@ -40,7 +40,7 @@
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/spendsmart.git
+git clone https://github.com/aadarshsingh27/spendsmart.git
 cd spendsmart
 ```
 
