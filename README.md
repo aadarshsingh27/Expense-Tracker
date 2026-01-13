@@ -40,21 +40,24 @@
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/spendsmart.git
-cd spendsmart
+git clone https://github.com/aadarshsingh27/Expense-Tracker.git
+cd Expense-Tracker
 ```
 
 ### 2. Install Dependencies
-Install dependencies for both the backend and frontend:
+You can install all dependencies (root, backend, and frontend) with a single command:
 
 ```bash
+npm run install-all
+```
+
+*Alternatively, you can install them manually:*
+```bash
 # Install Backend Dependencies
-cd backend
-npm install
+cd backend && npm install
 
 # Install Frontend Dependencies
-cd ../frontend
-npm install
+cd ../frontend && npm install
 ```
 
 ### 3. Environment Configuration
@@ -69,21 +72,13 @@ OPENAI_API_KEY=your_openai_api_key
 ```
 
 ### 4. Run the Application
-You can run both servers concurrently from the root (if configured) or separate terminals.
+You can run both servers concurrently from the root directory:
 
-**Terminal 1 (Backend):**
 ```bash
-cd backend
 npm start
-# Server runs on http://localhost:8000
 ```
 
-**Terminal 2 (Frontend):**
-```bash
-cd frontend
-npm start
-# App runs on http://localhost:3000
-```
+*The Backend will run on http://localhost:8000 and the Frontend on http://localhost:3000.*
 
 ---
 
@@ -92,7 +87,7 @@ npm start
 ### User & Auth
 -   `POST /api/users`: Register a new user
 -   `POST /api/users/login`: Login user
--   `DELETE /api/users/profile`: **[NEW]** Permanently delete user account and data (Protected)
+-   `DELETE /api/users/profile`: Permanently delete user account and data (Protected)
 
 ### Expenses
 -   `GET /api/expenses`: Get all expenses for valid user
@@ -108,6 +103,9 @@ npm start
 
 ## 🤝 Contributing
 Contributions are always welcome! Feel free to open issues or submit Pull Requests to improve SpendSmart.
+
+## 👤 Author
+**Aadarsh Singh** - [GitHub](https://github.com/aadarshsingh27)
 
 ## 📄 License
 This project is licensed under the MIT License.
