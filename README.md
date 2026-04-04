@@ -40,8 +40,8 @@
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/aadarshsingh27/spendsmart.git
-cd spendsmart
+git clone https://github.com/aadarshsingh27/Expense-Tracker.git
+cd Expense-Tracker
 ```
 
 ### 2. Install Dependencies
